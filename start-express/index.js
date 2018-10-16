@@ -24,7 +24,7 @@ app.get('/', function(req, res){
 
 app.get('/about', function(req, res){
     var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    res.render('about', {fortune: randomFortune}); //passando a variaável fortune setada com o valor randomFortune
+    res.render('about', {fortune: randomFortune}); //passando a variável fortune setada com o valor randomFortune
 });
 
 //404 catch-all handler (middleware)
